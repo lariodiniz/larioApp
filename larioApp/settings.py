@@ -33,16 +33,15 @@ DEFAULT_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    ''
+   # 'django_nose'
 ]
 
 LOCAL_APPS = [
-    ""
+    "core",
+    "lario_user"
 ]
 
-# INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
-INSTALLED_APPS = LOCAL_APPS + DEFAULT_APPS
-
+INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -134,7 +133,23 @@ STATICFILES_STORAGEE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'index'
+LOGOUT_URL = 'logout'
+AUTH_USER_MODEL = 'lario_user.User'
+
+"""
+# parametros para Testes do django_nose
+
+# diz ao Django que o TestRunner sera o Nose
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# alguns parametros que serao passados default ao nose
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=lario_user', # informa os pacotes que ele que verifica a cobertura de tests
+]
+"""
 
 try:
     from .local_settings import *
