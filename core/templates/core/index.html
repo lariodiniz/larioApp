@@ -8,9 +8,17 @@ Index
 {% endblock title %}
 
 {% block css %}
+<link rel="stylesheet" href="{% static 'assets/core/style.css' %}" media="screen" />
 {% endblock %}
 
 {% block container %}
-<h1>Lário Diniz</h1>
-<p>Portifólio em contrução.</p>
+<div class="container01 overlay overlay-60 oarallax" data-rellax-percentage="0.5"
+     style="background-image: url('{% static 'imgs/core/index01.jpg' %}')">
+    <div class="row justify-content-center align-items-center" id="index-container01">
+        <h1>Lário Diniz</h1>
+        <p>Portifólio em contrução.</p>
+    </div>
+
+</div>
+
 {% endblock %}
