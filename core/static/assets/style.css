@@ -9,7 +9,13 @@
 }
 
 .header a {
-    color: #FFF
+    color: #FFF;
+    display: block;
+    height: 100%;
+    padding: 0 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 .header {
     position: fixed;
@@ -19,6 +25,12 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 1040;
+}
+
+.header li {
+
+  height: 100%;
+    border-bottom: 4px dotted blue;
 }
 
 #header-icone{
