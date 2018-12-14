@@ -8,67 +8,41 @@ Index
 {% endblock title %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'assets/core/style.css' %}" media="screen" />
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}" media="screen" />
 {% endblock %}
 
 {% block container %}
 <div class="row">
 
-    <div class="container01" style="background-image: url('{% static 'imgs/core/index01.jpg' %}')">
+    <div class="container01" style="background-image: url('{% static 'core/imgs/index01.jpg' %}')">
          <div class="col-xs-10 col-centered">
                 <div id="index-container01">
 
-                    <h1>Lário Diniz</h1>
-                    <p>Portifólio em contrução.</p>
+                    <h1>Lário dos Santos Diniz</h1>
+                    <p>Desenvolvedor de Aplicações</p>
                 </div>
             </div>
     </div>
 
 </div>
-
+<br>
 <div class="row container02">
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-<p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-<p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-    <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-<p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
-        <p>asdsadsadasdasdasdasdasdsd asdasdasdasda asdasds asdasdasd</p>
+    <p>
+        Sou um desenvolvedor de aplicações Desktop, web e mobile que trabalha com as linguagens Python, Delphi e C#.
+        Alem disso, tenho conhecimentos com em Javascript, CSS e HTML.
+    </p>
+    <p>
+        Também trabalhei com os bancos de dados Microsoft SQL Server e PostgreSQL.
+    </p>
 </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="{% static 'core/js/IndexController.js' %}"></script>
+    <script type="text/javascript">
+        let controller = new IndexController();
+    </script>
 
 {% endblock %}

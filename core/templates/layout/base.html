@@ -9,17 +9,17 @@
     {% load staticfiles %}
 
     <!-- FavCon -->
-    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favcon/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favcon/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favcon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'favcon/site.webmanifest' %}">
-    <link rel="mask-icon" href="{% static 'favcon/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'layout/favcon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'layout/favcon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'layout/favcon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'layout/favcon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'layout/favcon/safari-pinned-tab.svg' %}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--  -->
 
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" media="screen" />
-    <link rel="stylesheet" href="{% static 'assets/style.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'layout/css/style.css' %}" media="screen" />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     {% block css %}
@@ -49,7 +49,11 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+
     {% block scripts %}
     {% endblock %}
+
+    <script src="{% static 'layout/js/script.js' %}"></script>
+
 </body>
 </html>
