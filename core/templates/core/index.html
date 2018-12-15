@@ -15,25 +15,41 @@ Index
 <div class="row">
 
     <div class="container01" style="background-image: url('{% static 'core/imgs/index01.jpg' %}')">
-         <div class="col-xs-10 col-centered">
-                <div id="index-container01">
-
-                    <h1>Lário dos Santos Diniz</h1>
-                    <p>Desenvolvedor de Aplicações</p>
+         <div class="col-xs-10">
+                <div id="index-container01" class="row justify-content-center">
+                    <div class="painel col-xs-12 col-md-6  align-self-center">
+                        <h1>Lário dos Santos Diniz</h1>
+                        <h4>Desenvolvedor de Aplicações</h4>
+                        <p>
+                            <a href="https://www.python.org/" target="_blank">Python</a> |
+                            <a href="https://www.embarcadero.com/br/products/delphi" target="_blank">Delphi</a> |
+                            <a href="https://dotnet.microsoft.com/" target="_blank">.Net</a> |
+                            <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+                        </p>
+                        <p>
+                            <a href="https://www.microsoft.com/pt-br/sql-server/" target="_blank">SQL Server</a> |
+                            <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> |
+                        </p>
+                    </div>
                 </div>
             </div>
     </div>
 
 </div>
-<br>
+
 <div class="row container02">
-    <p>
-        Sou um desenvolvedor de aplicações Desktop, web e mobile que trabalha com as linguagens Python, Delphi e C#.
-        Alem disso, tenho conhecimentos com em Javascript, CSS e HTML.
-    </p>
-    <p>
-        Também trabalhei com os bancos de dados Microsoft SQL Server e PostgreSQL.
-    </p>
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <img src="{% static 'core/imgs/eu.jpg' %}" alt="Foto de Lário Diniz" class="img-thumbnail">
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9  col-lg-10">
+        <p>
+            Desenvolvedor de aplicações desktop, web e mobile com experiencia nas linguagens Python, Delphi, .Net e Javascript.
+            Alem disso, conhecimento  na  linguagem de marcaçãod HTML e CSS.
+        </p>
+        <p>
+            Também tem experiencia com os bancos de dados Microsoft SQL Server e PostgreSQL.
+        </p>
+    </div>
 </div>
 
 {% endblock %}
