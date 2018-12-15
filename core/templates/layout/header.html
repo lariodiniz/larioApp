@@ -5,11 +5,14 @@
         <a class="header-a-logo" href="/">
             <img id="header-icone" src="{% static 'layout/imgs/icone.png' %}" alt="Logo da Aplicação">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler"
+                type="button" data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse iner-header">
-          <ul class="nav">
+        <div class="collapse navbar-collapse iner-header" id="navbarCollapse">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a href="#">
                   <span>Home</span>
@@ -20,10 +23,16 @@
                   <span>Curriculo</span>
               </a>
             </li>
+
             <li class="nav-item">
-              <a href="#">
-                  <span>Portfólio</span>
-              </a>
+            <a class="dropdown-toggle"
+               href="/" id="dropdown"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfólio</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown">
+              <a class="dropdown-item" href="#">BootPlayGame</a>
+              <a class="dropdown-item" href="#">Calendário Dekatrian</a>
+              <a class="dropdown-item" href="#">Controle de Combate</a>
+            </div>
             </li>
             <li class="nav-item">
               <a href="#">
