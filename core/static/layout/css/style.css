@@ -86,9 +86,20 @@
     background-color: #4d88ff;
 }
 
-.header button {
-    border: 1px solid rgba(240, 240, 240, .8);
+#menu button span {
+    display:block;
+    transform: translate3d(1, 1, 1);
     background-color: #f0f0f5;
+    border-radius: 5px;
     color: #000;
     padding:1em;
+}
+
+@media only screen and (max-width: 991px) {
+    .iner-header{
+        transform: translate3d(1, 1, 1);
+        background-color: #a3a3c2;
+         border-radius: 5px;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
 }
