@@ -27,6 +27,7 @@
 
 </head>
 <body class="text-center">
+
     {% include "layout/header.html" %}
     {% block messages %}
         {% for message in messages %}
@@ -35,12 +36,13 @@
           </div>
         {% endfor %}
     {% endblock %}
-    <main role="main" >
+    <main role="main">
 
             {% block container %}
             {% endblock %}
 
     </main>
+
     <footer class="mastfoot mt-auto  py-3">
         <div class="container">
                 <a href="https://github.com/lariodiniz" target="_blank"><img src="{% static 'layout/imgs/github.png' %}"></a>

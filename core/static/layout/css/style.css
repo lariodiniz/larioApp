@@ -1,4 +1,10 @@
+body{
+overflow : hidden; overflow-y : scroll;
+overflow : -moz-scrollbars-vertica
+}
+
 /* Header */
+
 
 .header {
     position: fixed;
