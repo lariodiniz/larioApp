@@ -1,15 +1,18 @@
+{% load static %}
+{% load staticfiles %}
+
 {% load i18n %}
 {% get_available_languages as LANGUAGES %}
 <div class="idiomas">
-  <form action="/i18n/setlang/" method="post">
+  <form  action="/i18n/setlang/" method="post" class="form-inline my-2 my-lg-0">
       {% csrf_token %}
-
-    <select name="language">
+    <select id="linguagem" name="language" class="form-control form-control-sm">
       {% for lang in LANGUAGES %}
-      <option value="{{ lang.0 }}">{{ lang.1 }}</option>
+      <option value="{{ lang.0 }}">{{ lang.0 }}</option>
       {% endfor %}
     </select>
 
-    <input type="submit" value="{% trans "Mudar idioma" %}" />
+    <input type="submit" value="{% trans 'mudar' %}" class="btn btn-light btn-sm" />
   </form>
 </div>
+

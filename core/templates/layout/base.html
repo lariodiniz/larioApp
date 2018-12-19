@@ -55,9 +55,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'layout/js/libs/services/HttpService.js' %}"></script>
 
     {% block scripts %}
     {% endblock %}
+
+
+    <script src="{% static 'layout/js/BaseServices.js' %}"></script>
+    <script src="{% static 'layout/js/BaseController.js' %}"></script>
+    <script type="text/javascript">
+        let baseController = new BaseController();
+    </script>
 
     <script src="{% static 'layout/js/script.js' %}"></script>
 
